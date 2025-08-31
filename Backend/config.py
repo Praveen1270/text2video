@@ -15,7 +15,7 @@ TMP_DIR = OUTPUT_DIR / "tmp"
 
 
 for d in [OUTPUT_DIR, IMAGES_DIR, AUDIO_DIR, VIDEO_DIR, TMP_DIR]:
-d.mkdir(parents=True, exist_ok=True)
+    d.mkdir(parents=True, exist_ok=True)
 
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
